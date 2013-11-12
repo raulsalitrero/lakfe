@@ -1,0 +1,36 @@
+header, #main, .logos {
+	text-align:center;
+}
+
+header h1 {
+	font-family:arial;
+}
+
+.espacio {
+	height:5px;
+}
+body {
+	background: none repeat scroll 0 0 #F2F2F2;
+}
+
+#main {
+	border:1px dashed #ccc;
+	padding:10px;
+}
+
+#pCanvas,#pVideo{
+	display:none;
+}
+
+#dv_barra_tools {
+	padding:5px;
+}
+
+.cantidades {
+	text-align:right;
+}
+
+#footer {
+    position: relative;
+    text-align: center;
+}

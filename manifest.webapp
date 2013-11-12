@@ -1,0 +1,44 @@
+{
+  "version": "1",
+  "name": "La Kfe 1.0",
+  "launch_path": "/lacafe/index.php",
+  "description": "La cafeteria",
+  "icons": {
+    "16": "/lacafe/images/icono-16.png",
+    "32": "/lacafe/images/icono-32.png",
+    "48": "/lacafe/images/icono-48.png",
+    "60": "/lacafe/images/icono-60.png",
+    "64": "/lacafe/images/icono-64.png",
+    "90": "/lacafe/images/icono-90.png",
+    "120": "/lacafe/images/icono-120.png",
+    "128": "/lacafe/images/icono-128.png"
+  },
+  "developer": {
+    "name": "TestApp",
+    "url": "http://robertnyman.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+    "desktop-notification": {
+      "description": "To show notifications"
+    },
+    "notification": {
+      "description": "To show notifications"
+    },
+    "geolocation": {
+      "description": "Marking out user location"
+    },
+    "videoCapture":{
+      "description": "capturar fotos usando la webcam"
+    }
+  },
+  "locales": {
+    "es": {
+      "name": "La Kfe 1.0",
+      "description": "Manejo de pedidos de la cafe"
+    }
+  }
+}
