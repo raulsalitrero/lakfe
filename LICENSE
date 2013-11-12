@@ -3,6 +3,12 @@ de la cual se incluye una copia de el archivo GPL.txt
 o bien el el sitio de la free softwqre foundation
 http://fsf.org/
 
+Este Trabajo Utiliza a su vez otros componentes de codigo Libre.
+jquery <http://jquery.com> Licencia MIT
+jquerymobile <http://jquery.com> Licencia MIT
+
+y Una version Modificada de GUMWrapper <https://github.com/tagawa/GumWrapper> Licencia MIT
+
 Autores:
 Raul Alejandro Salitrero Estrada <raulsalitrero@gmail.com>
 Alejandro Ponce Verduzco <aponce1979@gmail.com>
