@@ -120,13 +120,9 @@ CREATE TABLE `posts` (
   KEY `ix_usupost` (`usuarioId`,`fecha`),
   KEY `ix_fecha_post` (`fecha`,`usuarioId`),
   CONSTRAINT `fk_usu_post` FOREIGN KEY (`usuarioId`) REFERENCES `usuarios` (`usuarioID`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 /*Data for the table `posts` */
-
-insert  into `posts`(`id`,`texto`,`fecha`,`usuarioId`,`tienefoto`,`geo`) values (10,'viva mexico','2013-11-12 15:16:41',2,1,'{\"accuracy\":24,\"altitude\":0,\"altitudeAccuracy\":0,\"heading\":null,\"latitude\":28.7122855,\"longitude\":-106.1395119,\"speed\":null,\"timestamp\":1384294580792}');
-insert  into `posts`(`id`,`texto`,`fecha`,`usuarioId`,`tienefoto`,`geo`) values (11,'otro post mas','2013-11-12 15:23:12',2,1,'{\"accuracy\":24,\"altitude\":0,\"altitudeAccuracy\":0,\"heading\":null,\"latitude\":28.7122855,\"longitude\":-106.1395119,\"speed\":null,\"timestamp\":1384294985353,\"direccion\":\"Paseo de la Universidad, Campus II Uach, 31125 Chihuahua, CHIH, México\"}');
-insert  into `posts`(`id`,`texto`,`fecha`,`usuarioId`,`tienefoto`,`geo`) values (12,'ingue su <b>madre</b>','2013-11-12 15:56:13',2,1,'{\"accuracy\":77,\"altitude\":0,\"altitudeAccuracy\":0,\"heading\":null,\"latitude\":28.6364211,\"longitude\":-106.0844373,\"speed\":null,\"timestamp\":1384296931150,\"direccion\":\"Teófilo Borunda, San Pedro, 31000 Chihuahua, CHIH, México\"}');
 
 /*Table structure for table `usuarios` */
 
@@ -141,12 +137,9 @@ CREATE TABLE `usuarios` (
   `email` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`usuarioID`),
   UNIQUE KEY `usuario` (`usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 /*Data for the table `usuarios` */
-
-insert  into `usuarios`(`usuarioID`,`apaterno`,`amaterno`,`nombres`,`usuario`,`clave`,`esta`,`email`) values (1,'ponce','v','alejandr0','aponce','5e075c37efb4f81dbfd557a58fc2e58f','A','raulsalitrero@gmail.com');
-insert  into `usuarios`(`usuarioID`,`apaterno`,`amaterno`,`nombres`,`usuario`,`clave`,`esta`,`email`) values (2,'salitrero','e','rulo','rsalitrero','5e075c37efb4f81dbfd557a58fc2e58f','A','aponce1979@gmail.com');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
